@@ -3,25 +3,33 @@ Define function: fib(n)
 Return the nth number in the fibonacci sequence. */
 function fib(n) 
 {
-    let fib1 = 0;
-    let fib2 = 0;
-    let fib3 = 0;
-    for (let x = 0; x < n; x++)
+    if (!isNaN(n))
     {
-        //console.log(fib2);
-        if (x == 0)
+        let fib1 = 0;
+        let fib2 = 0;
+        let fib3 = 0;
+        for (let x = 0; x < n; x++)
         {
-            fib2 = 1;
+            //console.log(fib2);
+            if (x == 0)
+            {
+                fib2 = 1;
+            }
+            else
+            {
+                fib3 = fib2 + fib1;
+                fib1 = fib2;
+                fib2 = fib3;
+            }
         }
-        else
-        {
-            fib3 = fib2 + fib1;
-            fib1 = fib2;
-            fib2 = fib3;
-        }
+        return fib3;
     }
-    return fib3;
+    else
+    {
+        return NaN;
+    }
 }
+
 
 for (let y = 0; y < 10; y++)
 {
@@ -29,3 +37,5 @@ for (let y = 0; y < 10; y++)
     console.log(`Term ${num} is ${fib(num)} in the Fibonacci sequence`);
 }
 
+console.log(`Term Hello is ${fib('Hello')} in the Fibonacci sequence`);
+console.log(`Term NaN is ${fib(NaN)} in the Fibonacci sequence`);
