@@ -38,4 +38,4 @@ for (let y = 0; y < 10; y++)
 }
 
 console.log(`Term Hello is ${fib('Hello')} in the Fibonacci sequence`);
-console.log(`Term NaN is ${fib(NaN)} in the Fibonacci sequence`);
+console.log(`Term Null is ${fib(null)} in the Fibonacci sequence`);

@@ -8,7 +8,7 @@ let numbers2 = [5,6,3,2,6,4,2,6,3,2,4];
 let numbers3 = [6,3,8,5,2,5,7,4,2,6,8,4,2,1,5,7,4,4,5,4,3,6,8,4,3,6,9,5,3,6];
 let numbers4 = [undefined,4,2,2,5,2,4,NaN];
 let numbers5 = [];
-let temp = [7,1];
+let temp = [5,7,null,9,1];
 
 function bubbleSort(numArray) 
 {

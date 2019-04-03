@@ -4,8 +4,13 @@ Return true if even, false if odd.
 Do not use % operator. */
 function isEven(someNum) 
 {
-    if(!isNaN(someNum))
+    if (!isNaN(someNum))
     {
+        if (someNum === null)
+        {
+            console.log(`NOT A NUMBER!`);
+            return false;
+        }
         if (someNum < 0)
             someNum *= -1;
 
@@ -41,4 +46,4 @@ console.log(`76542 is ${isEven(76542)}`);
 console.log(`-7583827 is ${isEven(-7583827)}`);
 
 console.log(`Hello is ${isEven('Hello')}`);
-console.log(`NaN is ${isEven(NaN)}`);
+console.log(`Null is ${isEven(null)}`);
