@@ -20,7 +20,7 @@ function bubbleSort(numArray)
     {
         if (isNaN(numArray[checker]))
         {
-            console.log(`Current array is not valid!`);
+            console.log('"Uh Oh! You inputed something invalid"');
             valid = false;
             break;
         }

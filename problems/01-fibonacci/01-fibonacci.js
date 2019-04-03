@@ -25,9 +25,7 @@ function fib(n)
         return fib3;
     }
     else
-    {
-        return NaN;
-    }
+        return '"Uh Oh! You inputed something invalid"';
 }
 
 

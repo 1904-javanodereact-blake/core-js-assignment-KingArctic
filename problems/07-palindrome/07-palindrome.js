@@ -31,7 +31,7 @@ function isPalindrome(someStr)
         return pali;
     }
 
-    return false
+    return '"Uh Oh! You inputed something invalid"';
 }
 
 console.log(`Racecar palindrome test returns ${isPalindrome('RaCEcAr')}`);

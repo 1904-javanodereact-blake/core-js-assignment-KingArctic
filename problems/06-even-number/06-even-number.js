@@ -7,10 +7,8 @@ function isEven(someNum)
     if (!isNaN(someNum))
     {
         if (someNum === null)
-        {
-            console.log(`NOT A NUMBER!`);
-            return false;
-        }
+            return '"Uh Oh! You inputed something invalid"';
+            
         if (someNum < 0)
             someNum *= -1;
 
@@ -28,10 +26,7 @@ function isEven(someNum)
         return evenCounter = !evenCounter;
     }
     else
-    {
-        console.log(`NOT A NUMBER!`);
-        return false;
-    }
+        return '"Uh Oh! You inputed something invalid"';
 }
 
 console.log(`3 is ${isEven(3)}`);
