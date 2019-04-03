@@ -32,6 +32,8 @@ function bubbleSort(numArray)
         }
         iteration += 1;
     }
+
+    return numArray;
 }
 
 bubbleSort(numbers);
