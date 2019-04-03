@@ -6,14 +6,14 @@ function fib(n)
     if (!isNaN(n))
     {
         let fib1 = 0;
-        let fib2 = 0;
+        let fib2 = 1;
         let fib3 = 0;
         for (let x = 0; x < n; x++)
         {
-            //console.log(fib2);
+            console.log(fib2);
             if (x == 0)
             {
-                fib2 = 1;
+                 fib2 = 1;
             }
             else
             {
