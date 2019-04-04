@@ -7,7 +7,7 @@ function substring(someStr, startIndex, endIndex)
 {
     let newStr = '';
     
-    console.log(someStr)
+    //console.log(someStr)
 
     if (startIndex > endIndex) { return '"Uh Oh! Please make sure your starting point is less than your ending point"'; }
 
@@ -35,10 +35,10 @@ function substring(someStr, startIndex, endIndex)
     return '"Uh Oh! You inputed something invalid"';
 }
 
-console.log(substring('Hello', 0, 3));
-console.log(substring(null, 0, 4));
-console.log(substring('AHahAHahAHahAH', 5, 2));
-console.log(substring('Well goodbye', 2, 7));
-console.log(substring(1234567896, 2, 4));
-console.log(substring(NaN, 0, 3));
-console.log(substring('Hello', 2, 10));
+console.log(`Hello substring of 0 and 3 is ${substring('Hello', 0, 3)}\n`);
+console.log(`null sustring of 0 and 4 is ${substring(null, 0, 4)}\n`);
+console.log(`AHahAHahAHahAH substring of 5 and 2 is ${substring('AHahAHahAHahAH', 5, 2)}\n`);
+console.log(`Well goodbye substring of 2 and 7 is ${substring('Well goodbye', 2, 7)}\n`);
+console.log(`1234567896 substring of 2 and 4 is ${substring(1234567896, 2, 4)}\n`);
+console.log(`NaN substring of 0 and 3 is ${substring(NaN, 0, 3)}\n`);
+console.log(`Hello substring of 2 and 10 is ${substring('Hello', 2, 10)}\n`);

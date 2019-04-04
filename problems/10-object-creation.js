@@ -45,6 +45,6 @@ class Gun
 let ruby = new Car('Ford', 'Mustange', 'Red', 'V6', 120);
 let deagle = new Gun('Magnum Research', 'Desert Eagle', 'Titanium', .50, 470);
 
-console.log(computer);
 console.log(ruby);
+console.log(computer);
 console.log(deagle);

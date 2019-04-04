@@ -22,10 +22,10 @@ function factorial(someNum)
     }
 }
 
-console.log(`5! is ${factorial(5)}`);
-console.log(`10! is ${factorial(10)}`);
-console.log(`-3! is ${factorial(-3)}`);
-console.log(`NaN! is ${factorial(NaN)}`);
-console.log(`Undefined! is ${factorial(undefined)}`);
-console.log(`''! is ${factorial('')}`);
-console.log(`Null! is ${factorial(null)}`);
+console.log(`5! is ${factorial(5)}\n`);
+console.log(`10! is ${factorial(10)}\n`);
+console.log(`-3! is ${factorial(-3)}\n`);
+console.log(`NaN! is ${factorial(NaN)}\n`);
+console.log(`Undefined! is ${factorial(undefined)}\n`);
+console.log(`''! is ${factorial('')}\n`);
+console.log(`Null! is ${factorial(null)}\n`);

@@ -126,6 +126,6 @@ function printShape(shape, height, character)
   }
 }
 
-printShape("Square", 5, 'BLAH');
-printShape("Triangle", 5, ' ~ ');
-printShape("Diamond", 5, ' o ')
+printShape("Square", 15, ' * ');
+printShape("Triangle", 15, ' * ');
+printShape("Diamond", 15, ' * ')

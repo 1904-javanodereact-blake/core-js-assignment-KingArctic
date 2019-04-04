@@ -14,13 +14,13 @@ function bubbleSort(numArray)
 {
     let valid = true;
 
-    console.log(numArray)
+    //console.log(numArray)
 
     for (let checker = 0; checker < numArray.length; checker++)
     {
         if (isNaN(numArray[checker]))
         {
-            console.log('"Uh Oh! You inputed something invalid"');
+            console.log('"Uh Oh! You inputed something invalid"\n');
             valid = false;
             break;
         }
@@ -51,6 +51,8 @@ function bubbleSort(numArray)
             }
             iteration += 1;
         }
+
+        console.log(numArray + '\n');
     }
 
     return numArray;

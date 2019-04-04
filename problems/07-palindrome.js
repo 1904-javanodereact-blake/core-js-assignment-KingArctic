@@ -34,9 +34,9 @@ function isPalindrome(someStr)
     return '"Uh Oh! You inputed something invalid"';
 }
 
-console.log(`Racecar palindrome test returns ${isPalindrome('RaCEcAr')}`);
-console.log(`[1,2,1] palindrome test returns ${isPalindrome([1,2,1])}`);
-console.log(`undefined palindrome test returns ${isPalindrome(undefined)}`);
-console.log(`Hello olleh palindrome test returns ${isPalindrome('Hello olleh')}`);
-console.log(`5005 palindrome test returns ${isPalindrome(5005)}`);
-console.log(`Re,,,,,,D     RuM Sir            Is mUrdEr palindrome test returns ${isPalindrome('ReD     RuM Sir            Is mUrdEr')}`)
+console.log(`Racecar palindrome test returns ${isPalindrome('RaCEcAr')}\n`);
+console.log(`[1,2,1] palindrome test returns ${isPalindrome([1,2,1])}\n`);
+console.log(`undefined palindrome test returns ${isPalindrome(undefined)}\n`);
+console.log(`Hello olleh palindrome test returns ${isPalindrome('Hello olleh')}\n`);
+console.log(`5005 palindrome test returns ${isPalindrome(5005)}\n`);
+console.log(`Re,,,,,,D     RuM Sir            Is mUrdEr palindrome test returns ${isPalindrome('ReD     RuM Sir            Is mUrdEr')}\n`)

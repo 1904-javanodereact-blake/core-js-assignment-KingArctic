@@ -7,7 +7,7 @@ function isEven(someNum)
     if (!isNaN(someNum))
     {
         if (someNum === null)
-            return '"Uh Oh! You inputed something invalid"';
+            return '"Uh Oh! You inputed something invalid"\n';
             
         if (someNum < 0)
             someNum *= -1;
@@ -26,19 +26,19 @@ function isEven(someNum)
         return evenCounter = !evenCounter;
     }
     else
-        return '"Uh Oh! You inputed something invalid"';
+        return '"Uh Oh! You inputed something invalid"\n';
 }
 
-console.log(`3 is ${isEven(3)}`);
-console.log(`27 is ${isEven(27)}`);
-console.log(`100 is ${isEven(100)}`);
-console.log(`50 is ${isEven(50)}`);
-console.log(`1583974 is ${isEven(1583974)}`);
-console.log(`12 is ${isEven(12)}`);
-console.log(`43 is ${isEven(43)}`);
-console.log(`-323 is ${isEven(-323)}`);
-console.log(`76542 is ${isEven(76542)}`);
-console.log(`-7583827 is ${isEven(-7583827)}`);
+console.log(`3 is ${isEven(3)}\n`);
+console.log(`27 is ${isEven(27)}\n`);
+console.log(`100 is ${isEven(100)}\n`);
+console.log(`50 is ${isEven(50)}\n`);
+console.log(`1583974 is ${isEven(1583974)}\n`);
+console.log(`12 is ${isEven(12)}\n`);
+console.log(`43 is ${isEven(43)}\n`);
+console.log(`-323 is ${isEven(-323)}\n`);
+console.log(`76542 is ${isEven(76542)}\n`);
+console.log(`-7583827 is ${isEven(-7583827)}\n`);
 
-console.log(`Hello is ${isEven('Hello')}`);
-console.log(`Null is ${isEven(null)}`);
+console.log(`Hello is ${isEven('Hello')}\n`);
+console.log(`Null is ${isEven(null)}\n`);

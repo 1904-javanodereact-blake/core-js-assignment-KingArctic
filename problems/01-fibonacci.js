@@ -10,7 +10,7 @@ function fib(n)
         let fib3 = 0;
         for (let x = 0; x < n; x++)
         {
-            console.log(fib2);
+            //console.log(fib2);
             if (x == 0)
             {
                  fib2 = 1;
@@ -32,8 +32,8 @@ function fib(n)
 for (let y = 0; y < 10; y++)
 {
     let num = Math.floor(Math.random() * 20);
-    console.log(`Term ${num} is ${fib(num)} in the Fibonacci sequence`);
+    console.log(`Term ${num} is ${fib(num)} in the Fibonacci sequence\n`);
 }
 
-console.log(`Term Hello is ${fib('Hello')} in the Fibonacci sequence`);
-console.log(`Term Null is ${fib(null)} in the Fibonacci sequence`);
+console.log(`Term Hello is ${fib('Hello')} in the Fibonacci sequence\n`);
+console.log(`Term Null is ${fib(null)} in the Fibonacci sequence\n`);

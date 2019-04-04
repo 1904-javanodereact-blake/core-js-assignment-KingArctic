@@ -24,11 +24,11 @@ function reverseStr(someStr)
     return '"Uh Oh! You inputed something invalid"';
 }
 
-console.log(`Hello reversed is ${reverseStr('Hello')}`);
-console.log(`World reversed is ${reverseStr('World')}`);
-console.log(`123456789 reversed is ${reverseStr(123456789)}`);
-console.log(`[2,3,2,3] reversed is ${reverseStr([2,3,2,3])}`);
-console.log(`null reversed is ${reverseStr(null)}`);
-console.log(`NaN reversed is ${reverseStr(NaN)}`);
-console.log(`undefined reversed is ${reverseStr(undefined)}`);
-console.log(`SpAcEs a  n  d       Caps reversed is ${reverseStr('SpAcEs a  n  d       Caps')}`);
+console.log(`Hello reversed is ${reverseStr('Hello')}\n`);
+console.log(`World reversed is ${reverseStr('World')}\n`);
+console.log(`123456789 reversed is ${reverseStr(123456789)}\n`);
+console.log(`[2,3,2,3] reversed is ${reverseStr([2,3,2,3])}\n`);
+console.log(`null reversed is ${reverseStr(null)}\n`);
+console.log(`NaN reversed is ${reverseStr(NaN)}\n`);
+console.log(`undefined reversed is ${reverseStr(undefined)}\n`);
+console.log(`SpAcEs a  n  d       Caps reversed is ${reverseStr('SpAcEs a  n  d       Caps')}\n`);

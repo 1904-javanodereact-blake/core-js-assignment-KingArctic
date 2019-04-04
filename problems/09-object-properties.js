@@ -14,7 +14,7 @@ function objectProperties(someObj)
     for(let objProp in someObj)
     {
         console.log(`Property: ${objProp}
-        Value: ${someObj[objProp]}`);
+        Value: ${someObj[objProp]}\n`);
     }
 }
 
