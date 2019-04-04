@@ -53,6 +53,69 @@ function printShape(shape, height, character)
     }
     case "Diamond":
     {
+      let tempString = '';
+      for (let y = 0; y < height; y++)
+      {
+        for (let x = 0; x < height; x++)
+        {
+          if (y < Math.floor(height / 2))
+          {
+          //#region Top
+            if (x === Math.floor(height / 2))
+            {
+              tempString += character;
+             }     
+            else if (x < Math.floor(height / 2) && x >= (Math.floor(height / 2) - y))
+            {
+             tempString += character;
+            }        
+            else if (x > Math.floor(height/ 2) && x <= (Math.floor(height / 2) + y))
+            {
+              tempString += character;
+            }
+            else
+            {
+              for (let space = 0; space < character.length; space++)
+              {
+                tempString += ' ';
+              }
+            }
+          }
+          //#endregion
+          //#region Middle
+          else if (y === Math.floor(height / 2))
+          {
+            tempString += character;
+          }
+          //#endregion
+          //#region Bottom
+          else if (y > Math.floor(height / 2))
+          {
+            if (x === Math.floor(height / 2))
+            {
+              tempString += character;
+            }     
+            else if (x < Math.floor(height / 2) && x >= (y - Math.floor(height / 2)))
+            {
+             tempString += character;
+            }        
+            else if (x > Math.floor(height / 2) && x <= ((height - 1) - (y - Math.floor(height / 2))))
+            {
+              tempString += character;
+            }
+            else
+            {
+              for (let space = 0; space < character.length; space++)
+              {
+                tempString += ' ';
+              }
+            }
+          }
+          //#endregion
+        }
+        tempString += '\n';
+      }
+      console.log(tempString);
       break;
     }
     default:
@@ -64,4 +127,5 @@ function printShape(shape, height, character)
 }
 
 printShape("Square", 5, 'BLAH');
-printShape("Triangle", 5, '~');
+printShape("Triangle", 5, ' ~ ');
+printShape("Diamond", 5, ' o ')
