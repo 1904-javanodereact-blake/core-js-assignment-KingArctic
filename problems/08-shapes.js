@@ -58,14 +58,10 @@ function printShape(shape, height, character)
       {
         for (let x = 0; x < height; x++)
         {
-          if (y < Math.floor(height / 2))
+          if (y <= Math.floor(height / 2))
           {
-          //#region Top
-            if (x === Math.floor(height / 2))
-            {
-              tempString += character;
-             }     
-            else if (x < Math.floor(height / 2) && x >= (Math.floor(height / 2) - y))
+          //#region Top 
+            if (x <= Math.floor(height / 2) && x >= (Math.floor(height / 2) - y))
             {
              tempString += character;
             }        
@@ -81,21 +77,11 @@ function printShape(shape, height, character)
               }
             }
           }
-          //#endregion
-          //#region Middle
-          else if (y === Math.floor(height / 2))
-          {
-            tempString += character;
-          }
-          //#endregion
+
           //#region Bottom
           else if (y > Math.floor(height / 2))
-          {
-            if (x === Math.floor(height / 2))
-            {
-              tempString += character;
-            }     
-            else if (x < Math.floor(height / 2) && x >= (y - Math.floor(height / 2)))
+          {  
+            if (x <= Math.floor(height / 2) && x >= (y - Math.floor(height / 2)))
             {
              tempString += character;
             }        
@@ -126,6 +112,6 @@ function printShape(shape, height, character)
   }
 }
 
-printShape("Square", 15, ' * ');
-printShape("Triangle", 15, ' * ');
-printShape("Diamond", 15, ' * ')
+//printShape("Square", 15, ' * ');
+//printShape("Triangle", 15, ' * ');
+printShape("Diamond", 55, ' * ')
